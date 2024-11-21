@@ -51,14 +51,14 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(WalkCoRoutine());
     }
 
-    void OnTriggerEnter2d(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("ItemGood"))
+        if(collision.CompareTag("ItemGood"))
         {
             Destroy(collision.gameObject);
             myGameManager.AddScore();
         }
-        else if (collision.CompareTag("ItemBad"))
+        else if(collision.CompareTag("ItemBad"))
         {
             Destroy(collision.gameObject);
             PlayerDeath();

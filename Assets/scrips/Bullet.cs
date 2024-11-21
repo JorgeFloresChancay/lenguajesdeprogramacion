@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        else if (collision.CompareTag("ItemBad"))
+        else if(collision.CompareTag("ItemBad"))
         {
             myGameManager.AddScore();
             Destroy(collision.gameObject);
