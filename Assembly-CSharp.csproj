@@ -70,6 +70,7 @@
     <Compile Include="Assets\scrips\PlayerController.cs" />
     <Compile Include="Assets\scrips\SpawnManager.cs" />
     <Compile Include="Assets\scrips\GameManager.cs" />
+    <Compile Include="Assets\scrips\Bullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

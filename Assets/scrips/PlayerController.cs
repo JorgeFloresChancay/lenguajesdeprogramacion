@@ -33,10 +33,10 @@ public class PlayerController : MonoBehaviour
             myrigidbody2D.linearVelocity = new Vector2(myrigidbody2D.linearVelocity.x, playerJumpForce);
         }
         myrigidbody2D.linearVelocity = new Vector2(playerSpeed, myrigidbody2D.linearVelocity.y);
-        /*if(Input.GetKeyDown(keyCode.E))
+        if(Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(Bullet,transform.position,Quaternion.identity);
-        }*/
+        }
     }
 
     IEnumerator WalkCoRoutine()
